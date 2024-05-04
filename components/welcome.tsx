@@ -1,12 +1,6 @@
 import { ConnectButton } from "thirdweb/react";
 import Image from "next/image";
-import {
-  CHAIN,
-  accountAbstraction,
-  appMetadata,
-  client,
-  wallets,
-} from "../utils/constants";
+import { CHAIN, appMetadata, client, wallets } from "../utils/constants";
 
 const Welcome: React.FC = () => {
   return (
@@ -36,7 +30,6 @@ const Welcome: React.FC = () => {
           client={client}
           appMetadata={appMetadata}
           wallets={wallets}
-          accountAbstraction={accountAbstraction}
           chain={CHAIN}
           connectModal={{
             size: "compact",

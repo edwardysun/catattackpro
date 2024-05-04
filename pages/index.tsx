@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import Header from "../components/header";
-import Events from "../components/events";
 import Welcome from "../components/welcome";
 import ClaimKitten from "../components/claim-kitten";
 import { contract } from "../utils/constants";
@@ -84,7 +83,7 @@ const Home: NextPage = () => {
               )}
             </>
           )}
-          <Events />
+          <div style={{ marginTop: "40px" }}></div>
           <Footer />
         </div>
       </EventContext.Provider>
